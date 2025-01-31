@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blinkit Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2e131308aa.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://blinkit.com/images/faviconChange.ico" type="image/x-icon">
+  </head>
+  <body >
+
+    <nav class="navbar fixed-top bg-white navbar-expand-lg border-bottom">
+        <div class="container-fluid ms-2 mt-3">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img class="ms-2" src="bl_logo_web-removebg-preview.png" width="120" alt="">
+            </a>
+            
+            <!-- Navbar toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                    <li class="nav-item dropdown ps-5">
+                        <h5 class="fw-bold m-0 p-0">Delivery in 8 minutes</h5>
+                        <a class="nav-link dropdown-toggle m-0 p-0" style="font-size: 14px;" href="#" role="button" data-bs-toggle="dropdown">
+                            Sunita Niwas Pune, MH
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Search form -->
+                <form class="d-flex ms-5 me-3 fs-6">
+                    <input class="form-control  rounded-4" style="width: 650px; height: 45px; border: 1px solid rgba(181, 181, 181, 0.289);" type="search" placeholder="Search">
+                </form>
+                
+                <!-- Login button -->
+                <button type="button" class="btn ms-5 me-5 p-2 fs-6 me-3" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </button>
+            
+                <button class="btn btn-success ms-5 fw-bold p-2 my-cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" style="height: 50px;">
+                    <i class="fa-solid fa-cart-shopping"></i> My Cart
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="menuOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Orders</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="loginModal" data-bs-backdrop="loginModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        
+      <div class="modal-content align-items-center rounded-4" style="width: 800px;">
+        <button type="button" class="btn-close align-items-start" style="margin-right: 400px; padding: 20px;" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div><img class="pt-3" src="https://cdn.grofers.com/layout-engine/2023-11/app_logo.svg" alt="">
+        </div>
+        
+        <div class="modal-body align-items-center text-center">
+        <p class="fs-4 fw-bold mb-0" style="color: #333333;">India's last minute app</p>
+        <p class="text-center mt-0">Log in or Sign up</p>
+        <div class="input-group mb-3" style="height: 50px; width: 100%;">
+            <span class="input-group-text fw-bold bg-white ">+91</span>
+            <input type="tel" class="form-control border border-start-0 fs-6 fw-medium text-secondary phone" style="width: fit-content;" name="phone" placeholder="Enter phone number" maxlength="10" pattern="[0-9]{10}">
+        </div>
+            <div class="button"></div>
+          </div>
+          <p style="font-size: 10px; color: rgb(121, 118, 118);">By continuing, you agree to our Terms of service & Privacy policy</p>
+      </div>
+    </div>
+  </div>
+
+
+    <main class="container text-center ">
+        <div class="main-container">
+            <section class="section-1">
+                <img  class="img-fluid " style="width: 100%; height: 300px; margin-top: 100px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg" alt="">
+            </section>
+            <section class="section-2 d-flex overflow-auto gap-3 mt-3 mx-auto" style="width: 1255px;" >
+                <div class="section-2-img" style="flex: 0 0 auto; width: 30%;">
+                    <img class="img-fluid 1ounded" style="width: 100%;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2022-06/morning-banner.jpg" alt="">
+                </div>
+                <div class="section-2-img" style="flex: 0 0 auto;  width: 30%">
+                    <img class="img-fluid rounded" style="width: 100%;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/Pet-Care_WEB.jpg" alt="">
+                </div>
+                <div class="section-2-img" style="flex: 0 0 auto; width: 30%">
+                    <img class="img-fluid rounded" style="width: 100%;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/summer_WEB.jpg" alt="">
+                </div>
+                <div class="section-2-img" style="flex: 0 0 auto;  width: 30%">
+                    <img class="img-fluid rounded" style="width: 100%;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/electronic-WEB-1.jpg" alt="">
+                </div>
+                <div class="section-2-img" style="flex: 0 0 auto;  width: 30%">
+                    <img class="img-fluid rounded" style="width: 100%;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/mango-WEB-1.png" alt="">
+                </div>
+                <div class="section-2-img" style="flex: 0 0 auto;  width: 30%">
+                    <img class="img-fluid rounded" style="width: 100%;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/staples-WEB.jpg" alt="">
+                </div>
+            </section>
+            
+            
+            <section class="section-3  mt-3">
+                <div class="d-flex flex-row">
+                <div class="section-3-img" >
+                    <img  style="height: 190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img  style="height:190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img  style="height: 190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img  style="height: 190px" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-4_9.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img  style="height: 190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img  style="height: 190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img  style="height: 190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img  style="height:190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img  style="height: 190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-9_3.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img  style="height: 190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-10.png" alt="">
+                </div>
+            </div>
+            <div class="d-flex flex-row">
+                <div class="section-3-img">
+                    <img style="height: 190px;"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-11.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img  style="height:  190px;"  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-12.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img style="height:  190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-13.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img style="height:  190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-14.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img style="height:  190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-15.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img style="height:  190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-16.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img style="height:  190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-17.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img style="height:  190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-18.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img style="height:  190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-19.png" alt="">
+                </div>
+                <div class="section-3-img">
+                    <img style="height:  190px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-20.png" alt="">
+                </div>
+            </div>
+            </section>
+
+
+            <section class="section-4 mt-3">
+                <div class="section-header">
+                    <p class="text-start fw-bold fs-4">Dairy, Bread & Eggs</p>
+                </div>
+                <div class="section-list">
+                    <a href="page2.html" class="text-decoration-none text-dark">
+                    <div class="text-dark rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class=" m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                        </a>
+
+                        <button class="me-3 add-cart-btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                    </div>
+                    </div>
+              
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/6ae62ec2-3b13-4fff-b052-2ff3d4ef2d16.jpg?ts=1726473593" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                        <button class="me-3 add-cart-btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/e3f63e12-631f-4193-9160-ea4ddcbd6c5c.jpg?ts=1711189562" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 add-cart-btn btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/8f6bfafc-ad44-422a-8e96-7e2d2994012a.jpg?ts=1707998856" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 add-cart-btn btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/ba929c05-aba2-4838-b674-e2072089022b.jpg?ts=1712325614" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                   
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/a9b8e4d0-62ae-4a55-b0f7-c07d16a09326.jpg?ts=1707564212" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                     
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/42139f09-bfa0-4445-9827-bae0e2f3e52b.jpg?ts=1726817074" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/89cb3ef5-0003-4100-bcf4-f97092f30997.jpg?ts=1712325592" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/6d41a6e4-eb1b-413c-8e20-7b9e892e42f8.jpg?ts=1712325555" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-4 mt-5">
+                <div class="section-header">
+                    <p class="text-start fw-bold fs-4">Rolling paper & tobacco</p>
+                </div>
+                <div class="section-list">
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/478728a.jpg?ts=1690814280" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/496994a.jpg?ts=1698309251" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/506710a.jpg?ts=1685952438" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/b91a3d9a-4595-45b5-a123-5cbfcecc3bcc.jpg?ts=1728246095" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/496996a.jpg?ts=1690814374" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                   
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/30bad4db-8e4c-4060-8cb1-ed02004d3967.jpg?ts=1734681062" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                     
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/8725a571-23ac-4479-8033-38f83714d05b.jpg?ts=1735813393" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/506711a.jpg?ts=1686566489" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/e0c43658-ac76-4e87-8b8e-bf5422d25cbd.jpg?ts=1735813386" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-4 mt-5">
+                <div class="section-header">
+                    <p class="text-start fw-bold fs-4">Snacks & Munchies</p>
+                </div>
+                <div class="section-list">
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/03e157a6-b601-48ec-b664-e44155bb1808.jpg?ts=1723100068" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/a0f592fe-d783-42e1-b1a4-1efccdc52721.jpg?ts=1723100072" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/ef3c74a4-c809-4799-919d-27f75fba37eb.jpg?ts=1723100801" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/bc76ce9d-9d2c-42eb-a1d5-6464618fe978.jpg?ts=1723100846" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/7b3ddcef-4908-4ada-a7c0-a2a7d4e91e1e.jpg?ts=1723100712" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                   
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/519582a.jpg?ts=1690830565" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                     
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/b3ee7724-3b6c-475e-aa50-1714fe9199be.jpg?ts=1723100802" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/672eb8df-71a6-4fde-a825-8d64aa94d4da.jpg?ts=1736245592" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79f7319a-f048-48db-ab5a-00a6d2911ea3.jpg?ts=1723098575" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="section-4 mt-5">
+                <div class="section-header">
+                    <p class="text-start fw-bold fs-4">Hookah</p>
+                </div>
+                <div class="section-list">
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/480929a.jpg?ts=1687951095" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/496995a.jpg?ts=1690814532" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/480927a.jpg?ts=1689328456" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/535602a.jpg?ts=1698309253" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/535601a.jpg?ts=1698309253" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                   
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                     
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-4 mt-5">
+                <div class="section-header">
+                    <p class="text-start fw-bold fs-4">Mouth fresheners</p>
+                </div>
+                <div class="section-list">
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                   
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                     
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-4 mt-5">
+                <div class="section-header">
+                    <p class="text-start fw-bold fs-4">Cold Drinks & Juices</p>
+                </div>
+                <div class="section-list">
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                   
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                     
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-4 mt-5 mb-5">
+                <div class="section-header">
+                    <p class="text-start fw-bold fs-4">Candies & Gumss</p>
+                </div>
+                <div class="section-list">
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                   
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                     
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                    
+                    <div class="rounded-2 product-card border border-secondary border-opacity-25 flex-shrink-0 " style="height:280px; width:180px;">
+                        <img style="width: 140px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143" alt="">
+                        <p class="m-0 fw-bold text-start ms-3 mb-1" style="font-size: 8px;"><img style="height: 12px;" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png" alt=""> 8 MINS</p>
+                        <p class="product-card-title fw-medium text-start text-wrap ms-3 mb-2" style="width: 150px; font-size: 14px;">Amul Taaza Toned Fresh Milk
+                        </p>
+                        <p class="product-card-desc text-start ms-3 mb-0" style="font-size: 12px; color: rgb(133, 125, 125);">500 ml</p>
+                        <div class="product-action d-flex justify-content-between align-items-center mb-1">
+                            <p class="product-qty mt-3 ms-3 fw-bold" style="font-size: 12px;">₹28</p>
+                            <button class="me-3 btn btn btn-outline-success fw-bold pt-1.5 pb-1.5 ps-3 pe-3" style="font-size: 12px;">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+ 
+    
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <!-- Main Content -->
+            <div class="row">
+                <!-- Useful Links Column -->
+                <div class="col-md-3">
+                    <h6 class="mb-3">Useful Links</h6>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">About</a></li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Careers</a></li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Blog</a></li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Press</a></li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Lead</a></li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Value</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Privacy</a></li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Terms</a></li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">FAQs</a></li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Security</a></li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Mobile</a></li>
+                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Categories -->
+                <div class="col-md-9">
+                    <h6 class="mb-3">Categories <a href="#" class="text-success text-decoration-none">see all</a></h6>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2 text-secondary">Vegetables & Fruits</li>
+                                <li class="mb-2 text-secondary">Cold Drinks & Juices</li>
+                                <li class="mb-2 text-secondary">Bakery & Biscuits</li>
+                                <li class="mb-2 text-secondary">Dry Fruits, Masala & Oil</li>
+                                <li class="mb-2 text-secondary">Paan Corner</li>
+                                <li class="mb-2 text-secondary">Pharma & Wellness</li>
+                                <li class="mb-2 text-secondary">Ice Creams & Frozen Desserts</li>
+                                <li class="mb-2 text-secondary">Beauty & Cosmetics</li>
+                                <li class="mb-2 text-secondary">Electronics & Electricals</li>
+                                <li class="mb-2 text-secondary">Toys & Games</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2 text-secondary">Dairy & Breakfast</li>
+                                <li class="mb-2 text-secondary">Instant & Frozen Food</li>
+                                <li class="mb-2 text-secondary">Sweet Tooth</li>
+                                <li class="mb-2 text-secondary">Sauces & Spreads</li>
+                                <li class="mb-2 text-secondary">Organic & Premium</li>
+                                <li class="mb-2 text-secondary">Cleaning Essentials</li>
+                                <li class="mb-2 text-secondary">Personal Care</li>
+                                <li class="mb-2 text-secondary">Magazines</li>
+                                <li class="mb-2 text-secondary">Stationery Needs</li>
+                                <li class="mb-2 text-secondary">Print Store</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2 text-secondary">Munchies</li>
+                                <li class="mb-2 text-secondary">Tea, Coffee & Health Drinks</li>
+                                <li class="mb-2 text-secondary">Atta, Rice & Dal</li>
+                                <li class="mb-2 text-secondary">Chicken, Meat & Fish</li>
+                                <li class="mb-2 text-secondary">Baby Care</li>
+                                <li class="mb-2 text-secondary">Home & Office</li>
+                                <li class="mb-2 text-secondary">Pet Care</li>
+                                <li class="mb-2 text-secondary">Fashion & Accessories</li>
+                                <li class="mb-2 text-secondary">Books</li>
+                                <li class="mb-2 text-secondary">Navratri Specials</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="my-4">
+    
+            <div class="container">
+                <div class="row py-4">
+                    <div class="col-12">
+                        <!-- First Row - Copyright and Download -->
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="text-secondary">
+                                © Blink Commerce Private Limited, 2016-2025
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="text-secondary me-3">Download App</span>
+                                <a href="#" class="me-2 ">
+                                    <img src="https://blinkit.com/d61019073b700ca49d22.png"  style="height: 30px;" alt="App Store" class="img-fluid rounded bg-dark">
+                                </a>
+                                <a href="#" class="me-2">
+                                    <img src="https://blinkit.com/8ed033800ea38f24c4f0.png" style="height: 30px;" alt="Google Play" class="img-fluid rounded bg-dark">
+                                </a>
+                                <a href="#" class="me-2  mb-1" style="font-size: 33px; color: black;">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="#" class="me-2  mb-1" style="font-size: 33px; color: black;">
+                                    <i class="fa-brands fa-square-twitter"></i>                                </a>
+                                <a href="#" class="me-2  mb-1" style="font-size: 33px; color: black;">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+                                <a href="#" class="me-2  mb-1" style="font-size: 33px; color: black;">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="me-2 mb-1" style="font-size: 33px; color: black;">
+                                    <i class="fa-brands fa-square-threads"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Second Row - Disclaimer -->
+                        <div class="text-secondary small">
+                            "BlinkIt" is owned & managed by "Blink Commerce Private Limited" and is not related, linked or interconnected in whatsoever manner or nature, to "GROFFR.COM" which is a real estate services business operated by "Redstone Consultancy Services Private Limited".
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Try scrolling the rest of the page to see this option in action.</p>
+      </div>
+    </div>
+
+    <script type="module" src="product-detalis.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    </body>
+</html>

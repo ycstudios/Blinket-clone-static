@@ -1,0 +1,18 @@
+.section-list {
+    margin-top: 16px;
+    width: 100%; 
+    display: flex;
+    overflow: auto scroll;
+    gap: 20px;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+ .section-list::-webkit-scrollbar {
+    display: none; 
+}
+.section-2::-webkit-scrollbar{
+    display: none;
+}
+.left-section::-webkit-scrollbar {
+    display: none; 
+}
